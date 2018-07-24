@@ -9,7 +9,7 @@ pipeline {
     stage('git') {
       steps {
         dir(path: '/home/shiyanlou/test_git') {
-          git(url: '1df5f28a-e0f5-4053-b782-86606241d773', branch: 'master', credentialsId: '1df5f28a-e0f5-4053-b782-86606241d773')
+          git(url: 'https://github.com/Yehnn/test_git.git', branch: 'master', credentialsId: '1df5f28a-e0f5-4053-b782-86606241d773')
         }
 
       }
